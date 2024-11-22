@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "8902000000013001",
+      "name": "publicChatApp",
+      "domain": {
+        "id": "50023611299",
+        "name": "publicchatapp-60032525605.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60032525605",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

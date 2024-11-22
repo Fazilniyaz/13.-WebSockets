@@ -1,0 +1,8 @@
+{
+	"command": "node index.js",
+	"build_path": "D:\\Fazil\\MERN\\Edyoda\\10.NodeJS\\13. WebSockets",
+	"stack": "node18",
+	"env_variables": {},
+	"memory": 256,
+	"scripts": {}
+}

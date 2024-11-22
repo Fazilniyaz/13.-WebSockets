@@ -1,0 +1,41 @@
+1. The first step is to copy and paste the Url or link in the HTML/client side:
+
+    <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+
+2. If a client wants to make a connection with server:
+
+index.html : 
+
+<script>
+
+let socketClient = io();
+
+</script>
+
+Default index.js:
+
+const express = require("express");
+const app = express();
+const http = require("http").createServer(app);
+const port = 8080;
+const io = require("socket.io")(http);
+
+app.use(express.static(__dirname + "/public"));
+
+io.on("connection", (socket) => {
+  console.log("user connected");
+});
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
+http.listen(port, () => {
+  console.log(`Server started running on port ${port}`);
+});
+
+
+1 & 2 => "user connected"
+
+  
+
